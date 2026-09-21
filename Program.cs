@@ -1,4 +1,4 @@
-namespace gyak2
+namespace gyak2_2
 {
     internal static class Program
     {
