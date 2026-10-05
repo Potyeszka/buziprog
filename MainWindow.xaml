@@ -1,0 +1,30 @@
+﻿<Window x:Class="gyak4_kepvalogato.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gyak4_kepvalogato"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Name="mappa" Grid.Row="0" Grid.Column="0" Content="Mappa" Click="mappa_Click"></Button>
+
+        <GridSplitter Grid.Column="0" Width="4" ResizeDirection="Columns"></GridSplitter>
+
+        <ScrollViewer Grid.Row="1" Grid.RowSpan="2" Grid.Column="0"></ScrollViewer>
+        <WrapPanel Name="wrapPanel" ></WrapPanel>
+
+        <Image Name="nagykep" Grid.Row="0" Grid.RowSpan="2" Grid.Column="1"></Image>
+        <TextBlock Name="kepnev" Grid.Row="2" Grid.Column="2" Text="Kép neve"></TextBlock>
+    </Grid>
+</Window>
